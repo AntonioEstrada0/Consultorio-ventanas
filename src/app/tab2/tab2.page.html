@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Usuario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title><ion-icon name="ellipse-outline" class="custom-icon"></ion-icon>Nombre: </ion-card-title>
+      <ion-card-subtitle>Paciente ID</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      anotaciones del paciente
+    </ion-card-content>
+    <label class="prueba" for="file">File progress:</label>
+    <progress id="file" max="100" value="10"> 70% </progress>
+  </ion-card>
+
+  <ion-segment  class="pantallas" [(ngModel)]="selectTabs">
+    <ion-segment-button value="galeria">
+      <ion-label>Galeria</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="datos">
+      <ion-label>Datos</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div  *ngIf="selectTabs == 'galeria'">
+    <div class="container">
+      <div class="date">Fecha: 2 de julio de 2023
+        <img class="image" src="https://i.pinimg.com/originals/0c/ec/e5/0cece586c954083d42b0b97080d0dfc4.jpg" alt="Imagen de diente 1">
+        <img class="image" src="https://img.freepik.com/vector-premium/dibujos-animados-lindos-pequenos-dientes-cepillandose-dientes-cepillo-dientes_122297-1054.jpg?w=2000" alt="Imagen de diente 2">
+        <img class="image" src="https://previews.123rf.com/images/perysty/perysty1302/perysty130200094/18056647-dibujado-a-mano-ilustraci%C3%B3n-dibujo-de-los-dientes.jpg" alt="Imagen de diente 3">
+        </div>
+        <div class="date">Fecha: 5 de marzo de 2020
+          <img class="image" src="https://i.pinimg.com/originals/0c/ec/e5/0cece586c954083d42b0b97080d0dfc4.jpg" alt="Imagen de diente 1">
+          <img class="image" src="https://img.freepik.com/vector-premium/dibujos-animados-lindos-pequenos-dientes-cepillandose-dientes-cepillo-dientes_122297-1054.jpg?w=2000" alt="Imagen de diente 2">
+          <img class="image" src="https://previews.123rf.com/images/perysty/perysty1302/perysty130200094/18056647-dibujado-a-mano-ilustraci%C3%B3n-dibujo-de-los-dientes.jpg" alt="Imagen de diente 3">
+          </div>
+        <button class="buttonMore"><ion-icon name="add-circle-outline"></ion-icon></button>
+      </div>
+    </div>
+    
+
+  <div *ngIf="selectTabs == 'datos'">
+    <div class="container" >
+      <div class="info-label">Información</div>
+      <!--Aqui va nuestra informacion si tuvieramos info-->
+      <div class="button-container">
+        <button class="button"><ion-icon name="calendar-outline"></ion-icon></button>
+        <button class="button"><ion-icon name="chatbubbles-outline"></ion-icon></button>
+      </div>
+  </div>
+  </div>
+</ion-content>

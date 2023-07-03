@@ -1,0 +1,59 @@
+.container{
+    //background-color: aqua;
+    width: 80%;
+    left: 10%;
+    top: 5%;
+    position: relative;
+    height: 85%;
+    align-items: center;
+    border-radius: 20px;
+    background-image: url('https://st2.depositphotos.com/4734835/8077/v/450/depositphotos_80776226-stock-illustration-teeth-on-white-background-vector.jpg');
+    background-repeat: repeat;
+
+    //background-image: "https://st2.depositphotos.com/4734835/8077/v/450/depositphotos_80776226-stock-illustration-teeth-on-white-background-vector.jpg";
+}
+
+.login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    position: absolute;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    //bottom: 10%;
+    text-decoration: none;
+    //align-items: center;
+    margin-right: 0px;
+  }
+
+  .facebook-button {
+    background-color: #3b5998;
+    bottom: 16%;
+    left: 5%;
+  }
+
+  .google-button {
+    background-color: #db4a39;
+    bottom: 7%;
+    left: 9%;
+  }
+
+.titulo{
+    background-color: #36d4d4;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cajaT{
+    background-color:none;
+    font-size: 20px;
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    bottom: 60%;
+}
