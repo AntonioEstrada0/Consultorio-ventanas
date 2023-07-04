@@ -8,9 +8,9 @@
 
 <ion-content >
   <app-explore-container name="Tab 2 page"></app-explore-container>
-  <ion-card>
+  <ion-card class="contentU">
     <ion-card-header>
-      <ion-card-title><ion-icon name="ellipse-outline" class="custom-icon"></ion-icon>Nombre: </ion-card-title>
+      <ion-card-title><ion-icon name="image-outline" class="custom-icon"></ion-icon> Nombre: </ion-card-title>
       <ion-card-subtitle>Paciente ID</ion-card-subtitle>
     </ion-card-header>
   
@@ -32,24 +32,51 @@
 
   <div  *ngIf="selectTabs == 'galeria'">
     <div class="container">
-      <div class="date">Fecha: 2 de julio de 2023
-        <img class="image" src="https://i.pinimg.com/originals/0c/ec/e5/0cece586c954083d42b0b97080d0dfc4.jpg" alt="Imagen de diente 1">
-        <img class="image" src="https://img.freepik.com/vector-premium/dibujos-animados-lindos-pequenos-dientes-cepillandose-dientes-cepillo-dientes_122297-1054.jpg?w=2000" alt="Imagen de diente 2">
-        <img class="image" src="https://previews.123rf.com/images/perysty/perysty1302/perysty130200094/18056647-dibujado-a-mano-ilustraci%C3%B3n-dibujo-de-los-dientes.jpg" alt="Imagen de diente 3">
-        </div>
-        <div class="date">Fecha: 5 de marzo de 2020
-          <img class="image" src="https://i.pinimg.com/originals/0c/ec/e5/0cece586c954083d42b0b97080d0dfc4.jpg" alt="Imagen de diente 1">
-          <img class="image" src="https://img.freepik.com/vector-premium/dibujos-animados-lindos-pequenos-dientes-cepillandose-dientes-cepillo-dientes_122297-1054.jpg?w=2000" alt="Imagen de diente 2">
-          <img class="image" src="https://previews.123rf.com/images/perysty/perysty1302/perysty130200094/18056647-dibujado-a-mano-ilustraci%C3%B3n-dibujo-de-los-dientes.jpg" alt="Imagen de diente 3">
-          </div>
-        <button class="buttonMore"><ion-icon name="add-circle-outline"></ion-icon></button>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div class="date"> 2 de julio de 2023
+              <br>
+              <img class="image" src="https://i.pinimg.com/originals/0c/ec/e5/0cece586c954083d42b0b97080d0dfc4.jpg" alt="Imagen de diente 1">
+              <img class="image" src="https://img.freepik.com/vector-premium/dibujos-animados-lindos-pequenos-dientes-cepillandose-dientes-cepillo-dientes_122297-1054.jpg?w=2000" alt="Imagen de diente 2">
+              <img class="image" src="https://previews.123rf.com/images/perysty/perysty1302/perysty130200094/18056647-dibujado-a-mano-ilustraci%C3%B3n-dibujo-de-los-dientes.jpg" alt="Imagen de diente 3">
+              </div>
+          </ion-col>
+        </ion-row>
+        <!-- <ion-row>
+          <ion-col><div class="date"> 5 de marzo de 2020 <br>
+            <img class="image" src="https://i.pinimg.com/originals/0c/ec/e5/0cece586c954083d42b0b97080d0dfc4.jpg" alt="Imagen de diente 1">
+            <img class="image" src="https://img.freepik.com/vector-premium/dibujos-animados-lindos-pequenos-dientes-cepillandose-dientes-cepillo-dientes_122297-1054.jpg?w=2000" alt="Imagen de diente 2">
+            <img class="image" src="https://previews.123rf.com/images/perysty/perysty1302/perysty130200094/18056647-dibujado-a-mano-ilustraci%C3%B3n-dibujo-de-los-dientes.jpg" alt="Imagen de diente 3">
+            </div></ion-col>
+        </ion-row> -->
+      </ion-grid>
       </div>
+      <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+        <ion-fab-button>
+          <ion-icon name="chevron-up-circle"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="top">
+          <ion-fab-button>
+            <ion-icon name="calendar-outline"></ion-icon>
+          </ion-fab-button>
+        </ion-fab-list>
+      </ion-fab>
+      <!-- <div class="zonaBoton">
+        <ion-col><ion-button class="buttonMore"><ion-icon name="add-circle-outline"></ion-icon></ion-button></ion-col>
+      </div> -->
+
     </div>
     
 
   <div *ngIf="selectTabs == 'datos'">
     <div class="container" >
-      <div class="info-label">Información</div>
+      <div class="info-label">Información
+        <p>Edad:??</p>
+        <p>Genero:??</p>
+        <p>Diagnostico:??</p>
+        <p>Fecha de la cita</p>  
+      </div>
       <!--Aqui va nuestra informacion si tuvieramos info-->
       <div class="button-container">
         <button class="button"><ion-icon name="calendar-outline"></ion-icon></button>
