@@ -1,59 +1,56 @@
-.container{
-    //background-color: aqua;
-    width: 80%;
-    left: 10%;
-    top: 5%;
-    position: relative;
-    height: 85%;
-    align-items: center;
-    border-radius: 20px;
-    background-image: url('https://st2.depositphotos.com/4734835/8077/v/450/depositphotos_80776226-stock-illustration-teeth-on-white-background-vector.jpg');
-    background-repeat: repeat;
-
-    //background-image: "https://st2.depositphotos.com/4734835/8077/v/450/depositphotos_80776226-stock-illustration-teeth-on-white-background-vector.jpg";
+ion-content {
+  --background: #f4f4f4;
 }
 
-.login-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    position: absolute;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-    //bottom: 10%;
-    text-decoration: none;
-    //align-items: center;
-    margin-right: 0px;
-  }
-
-  .facebook-button {
-    background-color: #3b5998;
-    bottom: 16%;
-    left: 5%;
-  }
-
-  .google-button {
-    background-color: #db4a39;
-    bottom: 7%;
-    left: 9%;
-  }
-
-.titulo{
-    background-color: #36d4d4;
-    border-radius: 20px;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 30px;
+.message-item {
+  padding: 10px;
+  //border-bottom: 1px solid #ccc;
 }
 
-.cajaT{
-    background-color:none;
-    font-size: 20px;
-    position: absolute;
-    width: 70%;
-    left: 15%;
-    bottom: 60%;
+.message-item.incoming {
+  text-align: left;
+  background-color: #fff;
 }
+
+.message-item .message-content {
+  font-weight: bold;
+}
+
+.message-item .message-time {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+ion-footer {
+  --background: #fff;
+  --padding-bottom: 10px;
+}
+
+ion-input {
+  flex: 1;
+}
+
+ion-button {
+  margin-right: 10px;
+  position: relative;
+}
+
+.newMessage2{
+  position: fixed;
+  bottom: 0%;
+  // /height: 50%;
+}
+
+// .partM{
+//   width: 70%;
+//   background-color: aqua;
+//   position: absolute;
+//   //height: auto;
+// }
+
+// .partS{
+//   width: 10%;
+//   //right: 0px;
+//   background-color: brown;
+//   position: relative;
+// }

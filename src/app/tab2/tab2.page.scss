@@ -10,11 +10,15 @@
 }
 
 .contentU{
-  background-color: #1a4441c0;
+  //background-color: #1a4441c0;
   width: 80%;
-  position: relative;
+  position: a;
+  //border: 1px solid #ccc;
+  background-color: #cdd5dde0;
+  padding: 10px;
+  border-radius: 10px;
   //margin: 20px;
-  left: 7%;
+  left: 9%;
   height: auto;
 }
 
@@ -29,28 +33,31 @@ ion-col {
 .prueba{
   //color: aqua;
   //left: 5%;
-  margin: 5%;
+  margin: 2%;
   position: relative;
 }
 
 .pantallas{
-  background-color: #007bff91;
+  background-color: #a2f1e7;
   width: 80%;
   position: relative;
   //margin: 20px;
   left: 10%;
+  color: #000000;
 }
 
 .container {
   position: relative;
   width: 80%;
+  height: 70%;
   left: 10%;
   color: #000000;
   border: 1px solid #ccc;
+  background-color: #ffffff;
+  padding: 10px;
   border-radius: 10px;
   top: 10px;
-  padding: 10px;
-  height: auto;
+  
   //margin: 20%;
 }
 
@@ -81,16 +88,16 @@ ion-col {
   margin-right: 10px;
 }
 
-.add-button {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  padding: 10px;
-  background-color: #000000;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
+// .add-button {
+//   position: absolute;
+//   bottom: 10px;
+//   right: 10px;
+//   padding: 10px;
+//   background-color: #000000;
+//   color: #fff;
+//   border: none;
+//   cursor: pointer;
+// }
 
 .info-label {
   font-size: 18px;
@@ -98,19 +105,41 @@ ion-col {
   
 }
 
-.button-container {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
+// .button-container {
+//   display: flex;
+//   justify-content: flex-end;
+//   margin-top: 20px;
+// }
+
+// .button {
+//   margin-left: 10px;
+//   padding: 10px;
+//   background-color: #0d3e72;
+//   color: #ffffff;
+//   font-size: 15px;
+//   border: none;
+//   cursor: pointer;
+//   border-radius: 50%;
+// }
+.cardD{
+background-color: #007bff;
+position: relative;
+//height: auto;
 }
 
-.button {
-  margin-left: 10px;
-  padding: 10px;
-  background-color: #007bff;
-  color: #ffffff;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
+.inputD{
+background-color: #ffffff;
+//position: absolute;
+}
+
+.calendario{
+//position: absolute;
+}
+
+.cajap{
+align-items: center;
+}
+
+.prp{
+  height: 10%;
 }

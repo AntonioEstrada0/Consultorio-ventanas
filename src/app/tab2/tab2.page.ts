@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
   selectTabs="galeria";
-  selectTabs2="datos";
+  isModalOpen = false;
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
   constructor() {}
 
 }
